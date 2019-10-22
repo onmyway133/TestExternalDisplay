@@ -20,7 +20,7 @@ final class OtherViewController: UIViewController {
 
         view.backgroundColor = UIColor.brown
 
-         myWebView.load(URLRequest(url: URL(string: "https://bing.com")!))
+         myWebView.load(URLRequest(url: URL(string: "https://google.no")!))
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -28,5 +28,7 @@ final class OtherViewController: UIViewController {
 
         becomeFirstResponder()
         textField.becomeFirstResponder()
+        myWebView.becomeFirstResponder()
+        Manager.externalWebView = myWebView
     }
 }

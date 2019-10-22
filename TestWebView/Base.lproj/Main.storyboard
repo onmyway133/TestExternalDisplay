@@ -24,11 +24,18 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bAV-WS-bxU">
+                                <rect key="frame" x="106" y="332" width="202" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="textField" destination="bAV-WS-bxU" id="EZ5-Gs-uVj"/>
                         <outlet property="webView" destination="Hji-Od-rQF" id="e0S-6g-Exs"/>
                     </connections>
                 </viewController>
@@ -39,6 +46,7 @@
         <!--Other View Controller-->
         <scene sceneID="veB-rZ-xbd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofe-Dq-oNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="other" id="CfG-mn-tcI" customClass="OtherViewController" customModule="TestWebView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZDZ-RA-IHd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -72,7 +80,6 @@
                         <outlet property="webView" destination="FUb-W9-EOv" id="s3p-ft-3lr"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofe-Dq-oNU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="91.304347826086968" y="861.16071428571422"/>
         </scene>
