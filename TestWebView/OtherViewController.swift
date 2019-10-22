@@ -13,7 +13,8 @@ final class OtherViewController: UIViewController {
 
     @IBOutlet var myWebView: WKWebView!
 
-
+    @IBOutlet var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +27,6 @@ final class OtherViewController: UIViewController {
         super.viewDidAppear(animated)
 
         becomeFirstResponder()
+        textField.becomeFirstResponder()
     }
 }

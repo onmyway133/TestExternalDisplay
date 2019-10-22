@@ -24,12 +24,19 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBe-86-yh6">
+                                <rect key="frame" x="0.0" y="44" width="159" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VnA-ew-NNf"/>
                     </view>
                     <connections>
                         <outlet property="myWebView" destination="Gcn-YN-DLO" id="jCY-On-7Jr"/>
+                        <outlet property="textField" destination="rBe-86-yh6" id="rcp-bT-z17"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHW-Ya-Shh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
